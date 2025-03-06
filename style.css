@@ -4,5 +4,87 @@ html { box-sizing: border-box; }
 :root {
   /* zde vytvoř svoje css proměnné */
 
+  /* Fonty */
+  --font1: Poppins, sans-serif;
+  --font2: Open Sans, sans-serif;
+
+  /* Font-Size  */
+  --velikost-hlavicka: 4rem;
+  --text-hlavicka: 1,4rem;
+  --tlacitko: 1,4rem;
+  --nadpis-clanek: 1,6rem;
+  --meta: 1rem;
+  --plain-text: 1,125rem;
+
+  /* Barvy  */
+  --header-color: white;
+  --primary-color: #f24e7b;
+  --secondary-color: #931394;
+  --plain-text-color: #70666c;
+
+  /* Kontejner  */
+  --width: 48rem;
+  
+  /* Rohy */
+  --border-radius: 12px;
+
+  /* Padding  */
+
+
+  /* Margin  */
+
 }
+
+.header__title {font-family: var(--font1);
+font-size: var(--velikost-hlavicka);
+color: var(--header-color);
+margin:0}
+
+.header__description {color:var(--header-color);
+font-family: var(--font2);
+margin: 30px 0;
+font-size: var(--text-hlavicka);}
+
+.article__title a {font-family: var(--font1);
+font-size: var(--nadpis-clanek); 
+color:var(--primary-color);}
+
+.article__title {margin: 50px 0 30px 0;}
+
+.button {font-family:var(--font1);
+text-decoration: none;
+font-size:var(--tlacitko);
+color: var(--header-color);
+border: solid var(--header-color) 2px;
+display: inline-block;
+padding: 20px 30px;
+border-radius: 45px;
+text-align: center; 
+background-color: var(--primary-color);
+background-image: linear-gradient(45deg,#f24e7b,#931394);
+}
+
+.article__meta {font-family: var(--font1);
+display: inline-block;}
+
+.container {width: var(--width);
+margin-inline:auto;}
+
+.article__perex {font-family: var(--font1);
+font-size: var(--plain-text);
+}
+
+.article__image {float:right;
+border-radius:12px;
+margin: 0 30px 0 20px;
+}
+
+.article__avatar {border-radius: 50%;
+display:inline-block;
+vertical-align: middle;
+margin-right: 10px;}
+
+.header {background: url(images/header-bg.jpg ) no-repeat center/cover;
+padding: 70px;}
+
 
